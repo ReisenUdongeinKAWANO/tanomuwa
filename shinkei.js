@@ -76,19 +76,19 @@ function click(e)
 //ジャッジ
 function judge()
 {
-if( first.innerHTML == second.innerHTML)
-{
-first.style.visibility = "hidden";
-second.style.visibility = "hidden";
-mekuri += 2;
-if( mekuri == cards.length ) clearInterval(timer2)
-}
-else
-{
-first.innerHTML = "";
-second.innerHTML = "";
-}
-first  = null;
-second = null;
-timer  = null;
+ if( first.innerHTML == second.innerHTML)
+ {
+ first.style.visibility = "hidden";
+ second.style.visibility = "hidden";
+ mekuri += 2;
+ if( mekuri == cards.length ) clearInterval(timer2)
+ }
+ else
+ {
+ first.innerHTML = "";
+ second.innerHTML = "";
+ }
+ first  = null;
+ second = null;
+ timer  = null;
 }
